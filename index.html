@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bank Account Management</title>
+</head>
+<body>
+    <h1>Bank Account Management</h1>
+    <div class="account-info">
+        <p>Account Holder: <span id="account-holder">James St. Patrick</span></p>
+        <p>Account Type: <span id="account-type">Savings</span></p>
+        <p>Balance: ₦<span id="balance">0</span></p>
+    </div>
+    <div class="transaction">
+        <label for="transaction-type">Select Transaction Type:</label>
+        <select id="transaction-type">
+            <option value="deposit">Deposit</option>
+            <option value="withdraw">Withdraw</option>
+            <option value="check">Check Balance</option>
+        </select>
+        <input type="number" id="transaction-amount" placeholder="Amount">
+        <button onclick="performTransaction()">Submit</button>
+    </div>
+    <div id="message"></div>
+    <script src="app.js"></script>
+</body>
+</html>
